@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "875755584341",
+    "firebase_url": "https://budjetbuddy-d7c7e.firebaseio.com",
+    "project_id": "budjetbuddy-d7c7e",
+    "storage_bucket": "budjetbuddy-d7c7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875755584341:android:3b8a2f7b7d87df0b1a8ddc",
+        "android_client_info": {
+          "package_name": "com.budget.buddy.moneytracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875755584341-ru6tfh2buqckogfldsgsov10n5bprivi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.budget.buddy.moneytracking",
+            "certificate_hash": "2f18e778883db52a65f7272808d7d8f6239cb885"
+          }
+        },
+        {
+          "client_id": "875755584341-1hcs2ermudldflebtgq9nijc9hkoiqlh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8nSr0JaYQCDZKHvBHBF1eIkt6KaaJTF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875755584341-1hcs2ermudldflebtgq9nijc9hkoiqlh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="Reset Data"
+        android:icon="@drawable/ic_delete"
+        android:key="Reset_Data" />
+    <Preference
+        android:title="Clear Reports"
+        android:icon="@drawable/ic_delete"
+        android:key="Clear_Report" />
+
+</PreferenceScreen>

@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/notifications_switch"
+        android:summary="Recive notification of planned transiction "
+        android:title="Enable Notification" />
+
+
+    <EditTextPreference
+        android:dependency="notifications_switch"
+        android:digits="0123456789"
+        android:defaultValue="1"
+        android:inputType="number"
+        android:key="notification_reminder"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:maxLength="2"
+        android:summary="Number of days before recive reminder for planned notification"
+        android:title="Reminder" />
+
+</PreferenceScreen>

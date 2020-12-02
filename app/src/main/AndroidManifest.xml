@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.budget.buddy.moneytracking">
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PredictionActivity"></activity>
+        <activity android:name=".DepositActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA0br9k6Vs8TJuqFPguwXXwqo3C4n-gA2k" />
+
+        <provider
+            android:name=".Utils.GenericFileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <receiver
+            android:name=".Broadcast.MoneyReminder"
+            android:process=":remote" />
+
+        <service
+            android:name=".Broadcast.ReminderService"
+            android:enabled="true"
+            android:process=".Broadcast.ReminderService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.NewItemActivity"
+            android:label="New Item"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.CategoriesActivity"
+            android:label="Manage Categories"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/PreferenceScreen" />
+        <activity
+            android:name=".Activities.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.ReportActivity"
+            android:label="Report"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.ArchiveActivity"
+            android:label="Archive"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.EditActivity"
+            android:label="Edit"
+            android:parentActivityName=".Activities.DetailActivity" />
+        <activity
+            android:name=".Activities.ChartTypeActivity"
+            android:label="Show Chart"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.ShowChartActivity"
+            android:label="Chart type"
+            android:parentActivityName=".Activities.ChartTypeActivity" />
+        <activity
+            android:name=".Activities.PlannedActivity"
+            android:label="Planned "
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

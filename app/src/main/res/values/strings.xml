@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Menu and other-->
+    <string name="app_name">Budget Buddy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <!-- MainActivity -->
+    <string name="tab_month">Month</string>
+    <string name="tab_week">Week</string>
+    <string name="tab_day">Day</string>
+    <string name="available_amount">Rs</string>
+
+    <!-- Planned-->
+    <string name="select_planned_occurrence">Select planned occurrence</string>
+    <string-array name="occurrence">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+
+    <!-- Report -->
+    <string-array name="report_values">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+        <item>All</item>
+    </string-array>
+
+    <!-- Categories -->
+    <string name="select_category">Select Category</string>
+    <string-array name="categories_array">
+        <item>Food</item>
+        <item>Drink</item>
+        <item>Transport</item>
+        <item>Bar/Pub</item>
+        <item>Social Life</item>
+        <item>Family</item>
+        <item>Culture</item>
+        <item>Health</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--New item -->
+    <string name="Description">Description</string>
+    <string name="Location">Location</string>
+    <string name="Date">Date</string>
+    <string name="Amount">Amount</string>
+    <string name="Category">Category</string>
+
+    <string name="Planned">Planned</string>
+    <string name="Occurrence">Occurrence</string>
+    <string name="Repeat">Repeat</string>
+    <string name="Add">Add</string>
+
+
+    <!-- Strings related to Settings -->
+    <string name="pref_header_data_sync">Data</string>
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="notifications_switch">notifications_switch</string>
+    <string name="planned_textview">Planned</string>
+    <string name="global_summary">Global Summary</string>
+    <string name="generate_report">Generate Report</string>
+    <string name="create_report">Create report</string>
+    <string name="report_list">Report list</string>
+    <string name="chart_expense_profit">Chart Expense - Profit</string>
+    <string name="chart_categories">Chart Categories</string>
+    <string name="generate_chart">Generate Chart</string>
+    <string name="titolo">titolo</string>
+    <string name="moneytrack">Budget Buddy</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_category"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_planned"
+            android:icon="@drawable/ic_planned"
+            android:title="Planned" />
+        <item
+            android:id="@+id/nav_archive"
+            android:icon="@drawable/ic_description"
+            android:title="Archive" />
+        <item
+            android:id="@+id/nav_graph"
+            android:icon="@drawable/ic_chart"
+            android:title="Charts"></item>
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_date"
+            android:title="Report" />
+
+        <item
+            android:id="@+id/nav_chatbot"
+            android:icon="@drawable/ic_description"
+            android:title="Chatbot" />
+
+        <item
+            android:id="@+id/prediction"
+            android:icon="@drawable/ic_description"
+            android:title="Budjet Prediction" />
+    </group>
+
+
+</menu>
+
+
