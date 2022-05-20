@@ -1,5 +1,5 @@
 # Budget Buddy App
-Mobile Application to record budget of the users and predict upcoming expences
+Mobile application to record budget of the users and predict upcoming expences
 
 # Technologies
 
